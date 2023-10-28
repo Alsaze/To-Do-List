@@ -49,7 +49,8 @@ textarea {
     font-family: inherit;
 
 }
-input{
+
+input {
     flex: 1;
     border: none;
     outline: none;
@@ -103,17 +104,19 @@ h6 {
     font-size: inherit;
     font-weight: 400;
 }
+
 /*--------------------*/
 
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
     background-size: cover;
     position: absolute;
     background: linear-gradient(135deg, #152687, #ab3030);
 }
-.todo-app{
+
+.todo-app {
     width: 100%;
     max-width: 540px;
     background: #fff;
@@ -121,17 +124,20 @@ h6 {
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
-.todo-app h2{
+
+.todo-app h2 {
     color: #002765;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-.todo-app img{
+
+.todo-app img {
     width: 30px;
     margin-left: 10px;
 }
-.row{
+
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -142,26 +148,41 @@ h6 {
 }
 
 
-li{
+li {
     padding: 15px 40px;
     position: relative;
     cursor: pointer;
     border-radius: 20px;
 }
-li::before{
+
+li::before {
     content: '';
     position: absolute;
     background-size: cover;
     left: 0px;
-    transform: translateY(-25%);
+    top: 9px;
 
     width: 28px;
     height: 28px;
     background-image: url("img/unchecked.png");
 }
-li.cheked::before {
+
+li.checked::before {
     background-image: url("img/checked.png");;
 }
-li:hover{
+
+li:hover {
     background: #edeef0;
+}
+
+li span {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    right: 5px;
+    top: 11px;
+
+    width: 20px;
+    height: 20px;
+    background-image: url("img/cross.png");
 }
